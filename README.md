@@ -1,4 +1,4 @@
-Openni2-DepthSenseDriver
+OpenNI2-DepthSenseDriver
 ========================
 
 - This is the OpenNI 2 driver for SoftKinetic sensor devices (e.g. DS325).
