@@ -513,6 +513,7 @@ public:
 		oni::driver::DeviceStateChangedCallback deviceStateChangedCallback,
 		void* pCookie)
 	{
+printf("COUCOU SOFTKIN INIT \n");
 		oni::driver::DriverBase::initialize(connectedCallback, disconnectedCallback, deviceStateChangedCallback, pCookie);
 
 		// Connect to the DepthSense device
@@ -568,6 +569,7 @@ public:
 				iter->Value() = pDevice;
 				return pDevice;
 			}
+            else printf("COUCOU\n");
 		}
 
 		getServices().errorLoggerAppend("Looking for '%s'", uri);
