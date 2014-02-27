@@ -1,13 +1,43 @@
-# Compiled Object files
-*.slo
-*.lo
+#################
+## openFrameworks
+#################
+
+[Bb]in/*
+![Bb]in/data/
+[Bb]uild/
+[Oo]bj/
 *.o
+[Dd]ebug*/
+[Rr]elease*/
+*.mode*
+*.app/
+*.pyc
+*.log
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
+
+#################
+## Code::Blocks
+#################
+
+*.cbp
+*.depend
+*.layout
+
+############
+## Windows
+############
+
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+*~
+official
+*.pnm
+*.jpg
+*.mp4
+test*
+*.bak

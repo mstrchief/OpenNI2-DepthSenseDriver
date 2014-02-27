@@ -420,7 +420,8 @@ public:
 			// Find the depth node
 			// Depth ノードを探す
 	        std::vector<DepthSense::Node> nodes = m_device.getNodes();
-			auto it = std::find_if( nodes.begin(), nodes.end(), []( DepthSense::Node& val ) {
+			//auto it = std::find_if( nodes.begin(), nodes.end(), []( DepthSense::Node& val ) {
+			std::vector<DepthSense::Node>::iterator it = std::find_if( nodes.begin(), nodes.end(), []( DepthSense::Node& val ) {
 				return val.is<DepthSense::DepthNode>();
 			} );
 
@@ -436,7 +437,8 @@ public:
 			// Find the color node
 			// カラーノードを探す
 	        std::vector<DepthSense::Node> nodes = m_device.getNodes();
-			auto it = std::find_if( nodes.begin(), nodes.end(), []( DepthSense::Node& val ) {
+			//auto it = std::find_if( nodes.begin(), nodes.end(), []( DepthSense::Node& val ) {
+			std::vector<DepthSense::Node>::iterator it = std::find_if( nodes.begin(), nodes.end(), []( DepthSense::Node& val ) {
 				return val.is<DepthSense::ColorNode>();
 			} );
 
